@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerVibration", "ControllerVibration\ControllerVibration.csproj", "{4484B49D-613C-402F-9A79-3B4FFFAACCDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4484B49D-613C-402F-9A79-3B4FFFAACCDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4484B49D-613C-402F-9A79-3B4FFFAACCDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4484B49D-613C-402F-9A79-3B4FFFAACCDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4484B49D-613C-402F-9A79-3B4FFFAACCDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
