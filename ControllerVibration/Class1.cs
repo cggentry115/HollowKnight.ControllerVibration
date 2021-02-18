@@ -1,11 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+﻿using HutongGames.PlayMaker;
 using HutongGames.PlayMaker.Actions;
-using Modding;
+using Modding;   
 using XInputDotNetPure;
 using UnityEngine;
-
+using ModCommon.Util;
+using ModCommon;
 //leftMotor low frequency, rightMotor High Frequencies, 0 - 65,535
 namespace ControllerVibration
 {
@@ -13,8 +12,11 @@ namespace ControllerVibration
     {
 
         
-        private float VibrationTime = .5f; //How long it will vibrate for. Interacts with time.deltaTime so a value of '1' will result in a 1-second vibration.
-        private bool isRumbling = true;
+        private float VibrationTime = 0f;
+        private bool IsTimedRumbling = true;
+        private bool WasContinuousRumbling = false;
+        
+
 
         //List of collider.toString()'s. One contains a list of colliders that should not trigger vibration, while the other
         //can be used to trigger a specific type of vibration, if desired.
@@ -23,7 +25,7 @@ namespace ControllerVibration
             "white_grass", "Shield ", "white", "Break", "Roof ", 
             "Dream Dialogue", "town_grass", "left cliff collider", "Geo Small", "plat_float_", "GameObject", 
             "Blue Glob", "Tute Door", "Tute Pole",  "Chunk", "Mines Short Shelf", "terrain collider", "Stag Lift", "Lift",
-            "Opened", "elev_plat"
+            "Opened", "elev_plat", "joni_plinth", "Head Box", "Acid Box", "tollbooth_bottom"
         };
 
 
@@ -38,33 +40,39 @@ namespace ControllerVibration
         {
             "Zombie Runner", "Crossroads Statue Horn",
             "Crossroads Statue Stone", "Climber", "Crawler", "Zombie Runner", "Geo Rock", "brk_barrel",
-            "Buzzer", "brk_barrel", "Fly", "Gate Switch", "Tinger", "Soul Totem", "Bell", "Hatcher", "Spitter",
-            
+            "Buzzer", "brk_barrel", "Fly", "Gate Switch", "Tinger", "Soul Totem", "Bell (", "Hatcher", "Spitter",
+            "brk_cart", "Health Scuttler", "Health Cocoon", "Ghost Warrior Slug", "Shot Slug Spear", "Quake Floor",
+            "health plant", "Fungus Flyer", "Fungoon Baby", "Fungus Mushroom", "Bounce Shroom", "Phys Box", "Fung Crawler", 
+            "Mantis", ""
+
         };
-        
-        
+
+
+
         public ControllerVibration() : base("Controller Vibration") 
         {
         }
+        
             public override void Initialize() 
         {
             Log("Initializing ControllerVibration");
             
-            //These functions correspond to events that should have Vibration, so when they are called, 
-            //my modded vibration function is called as well
+            //These functions correspond to events that should have Vibration
             ModHooks.Instance.HeroUpdateHook += OnHeroUpdate;            
             ModHooks.Instance.SlashHitHook += OnSlashHit;
+            ModCommon.ModCommon.OnSpellHook += OnSpellHook;
             On.HeroController.DoHardLanding += DoHardLanding;
             ModHooks.Instance.TakeHealthHook += TakeDamage;
             On.DamageEnemies.DoDamage += DoDamage;
             ModHooks.Instance.BeforeAddHealthHook += BeforeAddHealthHook;
+            
+            
 
 
             
             //These lines of code shorten all of the elements of the collider lists to just 5 characters long. While this
             //is not a very good way of doing things, without actually being able to tell if a given collider should vibrate,
             //since there seems to be no base function for that, I have to manually identify each collider, classifying it as either no, light, or regular vibrate
-            //Setting it to 5 makes it to where something like "Geo Rock 52 5" will still produce vibration, since it will be just seen as "Geo R"
             for(int i = 0; i < NoVibrateColliders.Length; i++)
             {
                 if (NoVibrateColliders[i].Length > 5)
@@ -86,27 +94,49 @@ namespace ControllerVibration
                     RegularVibrateColliders[i] = RegularVibrateColliders[i].Substring(0, 5);
                     Log(i + RegularVibrateColliders[i]);
                 }
+
             }
+
+            
+
+            
+
+
+
         }
-        private void OnHeroUpdate() //Called every time HeroController is called as well
+
+
+
+        private void OnHeroUpdate()
         {
             
-            if (this.isRumbling)
+            //Every frame, a check is made to see if a certain type of vibration is supposed to be occuring.
+            if (HeroController.instance.cState.superDashing || HeroController.instance.cState.wallSliding)
+            {
+                if (!WasContinuousRumbling)
+                {
+                    ResetTimedRumble();
+                    GamePad.SetVibration(PlayerIndex.One, 2f, .3f);
+                    WasContinuousRumbling = true;
+                }
+            } else if (this.IsTimedRumbling)
             {
                 if (this.VibrationTime <= 0)
                 {
-                    GamePad.SetVibration(PlayerIndex.One, 0f, 0f);
-                    this.isRumbling = false;
-                    VibrationTime = 0f;
-                    return;
+                    ResetTimedRumble();
+                } else
+                {
+                    VibrationTime -= Time.deltaTime;
                 }
 
-                VibrationTime -= Time.deltaTime;
-            } 
-
+            } else if (WasContinuousRumbling) //WasContinuousRumbling is always set to true when the triggering event is occuring, so the first frame after getEvent is false, rumbling stops. 
+            {
+                GamePad.SetVibration(PlayerIndex.One, 0f, 0f);
+                WasContinuousRumbling= false;
+            }
         }
         
-        //This function is called when a gameobject, such as Slash, hits another collider, such an enemy
+        //This function is called when slashing hits something
         //See's what Slash has collided with, and what type of vibration should occour
         private void OnSlashHit(Collider2D otherCollider, GameObject gameObject)
         {
@@ -116,7 +146,7 @@ namespace ControllerVibration
 
             if ((IsInArray(NoVibrateColliders, ShortOtherCollider)) || otherCollider.ToString().Contains("Dialo") ) //If otherColider is in list of no vibrations, then do nothing
             {
-                Log("No Vibrate Collider: " + otherCollider);
+                //Log("No Vibrate Collider: " + otherCollider);
             }
             else
             {
@@ -132,11 +162,11 @@ namespace ControllerVibration
                     
                     {    
                         case true: 
-                            Log("Regular Collider: " + otherCollider);
+                            //Log("Regular Collider: " + otherCollider);
                             Vibrate(7);
                             return;
                         case false:
-                            Log("Light Collider: " + otherCollider);
+                            //Log("Light Collider: " + otherCollider);
                             Vibrate(8);
                             return;
                     }
@@ -166,15 +196,17 @@ namespace ControllerVibration
             Vibrate(4);
             return health;
         }
+
+        
         
         
         
         
         //A variety of switch statements that correspond to a certain vibration effect. 
         //Left is low frequency rumble, right is high frequency
-        public void Vibrate(int type)
+        private void Vibrate(int type)
         {
-            this.isRumbling = true;
+            this.IsTimedRumbling = true;
             switch (type)
             {
                 case 1: //Damage Taken
@@ -203,15 +235,15 @@ namespace ControllerVibration
                     return;
                 case 7: //Larger rumble (in comparison to case 7), object like a wall, stone monument. Default rumble for 'unknown' colliders
                     VibrationTime = .15f;
-                    GamePad.SetVibration(PlayerIndex.One, .2f, 0f);
+                    GamePad.SetVibration(PlayerIndex.One, .4f, .2f);
                     return;
                 case 8: //Light rumble, like breaking a sign post
                     VibrationTime = .15f;
                     GamePad.SetVibration(PlayerIndex.One, 0f, .2f);
                     return;
                 case 9: //Spell Rumble
-                    VibrationTime = 1;
-                    GamePad.SetVibration(PlayerIndex.One, 1f, 1f);
+                    VibrationTime = .35f;
+                    GamePad.SetVibration(PlayerIndex.One, .75f, .5f);
                     return;
                 case 10: //Bounce Rumble
                     VibrationTime = 1;
@@ -222,7 +254,23 @@ namespace ControllerVibration
             }
         }
 
-        //Returns bool if a given string is within the given array. Used for comparing in collider lists.
+        private bool OnSpellHook(ModCommon.ModCommon.Spell s)
+        {
+            Vibrate(9);
+            return true;
+        }
+
+        private void ResetTimedRumble() 
+        {
+            IsTimedRumbling = false;
+            VibrationTime = 0f;
+            GamePad.SetVibration(PlayerIndex.One, 0f, 0f);
+
+        }
+
+        //Used for comparing in collider lists.
+
+
         private bool IsInArray(string[] ColliderList, string otherCollider)
         {
             foreach (var str in ColliderList)
@@ -235,6 +283,11 @@ namespace ControllerVibration
 
             return false;
         }
-        
+
+        public override string GetVersion()
+        {
+            return "BETA 0.2";
+        }
+
     }
 }
