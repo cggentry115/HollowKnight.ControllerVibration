@@ -62,6 +62,8 @@ namespace ControllerVibration
             ModHooks.Instance.BeforeAddHealthHook += BeforeAddHealthHook;
             On.HeroController.HeroDash += HeroDash;
             On.EnemyDreamnailReaction.RecieveDreamImpact += RecieveDreamImpact;
+            On.HeroController.Pause += Pause;
+            On.HeroController.UnPause += UnPause;
             //These lines of code shorten all of the elements of the collider lists to just 5 characters long. While this
             //is not a very good way of doing things, without actually being able to tell if a given collider should vibrate,
             //since there seems to be no base function for that, I have to manually identify each collider, classifying it as either no, light, or regular vibrate
@@ -90,6 +92,8 @@ namespace ControllerVibration
             }
         }
 
+
+
         private void RecieveDreamImpact(On.EnemyDreamnailReaction.orig_RecieveDreamImpact orig, EnemyDreamnailReaction self)
         {
             orig(self);
@@ -99,7 +103,7 @@ namespace ControllerVibration
         private void HeroDash(On.HeroController.orig_HeroDash orig, HeroController self)
         {
             orig(self);
-            Rumble(5);
+            Rumble(5); 
         }
 
         private void OnHeroUpdate()
@@ -110,7 +114,7 @@ namespace ControllerVibration
             {
                 if (!WasContinuousRumbling)
                 {
-                    ResetTimedRumble();
+                    ResetTimedVibration();
                     GamePad.SetVibration(PlayerIndex.One, .5f, .8f);
                     WasContinuousRumbling = true;
                 }
@@ -118,7 +122,7 @@ namespace ControllerVibration
             {
                 if (this.VibrationTime <= 0)
                 {
-                    ResetTimedRumble();
+                    ResetTimedVibration();
                 } else
                 {
                     VibrationTime -= Time.deltaTime;
@@ -183,6 +187,19 @@ namespace ControllerVibration
             return health;
         }
 
+        private void UnPause(On.HeroController.orig_UnPause orig, HeroController self)
+        {
+            orig(self);
+            
+        }
+
+        private void Pause(On.HeroController.orig_Pause orig, HeroController self)
+        {
+            orig(self);
+            ResetTimedVibration();
+            
+        }
+
 
 
         //A variety of switch statements that correspond to a certain vibration effect. 
@@ -235,7 +252,7 @@ namespace ControllerVibration
             return true;
         }
 
-        private void ResetTimedRumble() 
+        private void ResetTimedVibration() 
         {
             IsTimedRumbling = false;
             VibrationTime = 0f;
@@ -257,7 +274,7 @@ namespace ControllerVibration
         }
         public override string GetVersion()
         {
-            return "BETA 0.2";
+            return "BETA 0.3.1";
         }
 
     }
