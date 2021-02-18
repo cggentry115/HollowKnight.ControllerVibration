@@ -10,14 +10,10 @@ namespace ControllerVibration
 {
     public class ControllerVibration : Mod
     {
-
-        
         private float VibrationTime = 0f;
         private bool IsTimedRumbling = true;
         private bool WasContinuousRumbling = false;
-        
-
-
+ 
         //List of collider.toString()'s. One contains a list of colliders that should not trigger vibration, while the other
         //can be used to trigger a specific type of vibration, if desired.
         private string[] NoVibrateColliders =
@@ -63,17 +59,13 @@ namespace ControllerVibration
             ModCommon.ModCommon.OnSpellHook += OnSpellHook;
             On.HeroController.DoHardLanding += DoHardLanding;
             ModHooks.Instance.TakeHealthHook += TakeDamage;
-            On.DamageEnemies.DoDamage += DoDamage;
             ModHooks.Instance.BeforeAddHealthHook += BeforeAddHealthHook;
-            
-            
-
-
-            
+            On.HeroController.HeroDash += HeroController_HeroDash;
+            On.EnemyDreamnailReaction.RecieveDreamImpact += RecieveDreamImpact;
             //These lines of code shorten all of the elements of the collider lists to just 5 characters long. While this
             //is not a very good way of doing things, without actually being able to tell if a given collider should vibrate,
             //since there seems to be no base function for that, I have to manually identify each collider, classifying it as either no, light, or regular vibrate
-            for(int i = 0; i < NoVibrateColliders.Length; i++)
+            for (int i = 0; i < NoVibrateColliders.Length; i++)
             {
                 if (NoVibrateColliders[i].Length > 5)
                 {
@@ -96,27 +88,30 @@ namespace ControllerVibration
                 }
 
             }
-
-            
-
-            
-
-
-
         }
 
+        private void RecieveDreamImpact(On.EnemyDreamnailReaction.orig_RecieveDreamImpact orig, EnemyDreamnailReaction self)
+        {
+            orig(self);
+            Rumble(7);
+        }
 
+        private void HeroController_HeroDash(On.HeroController.orig_HeroDash orig, HeroController self)
+        {
+            orig(self);
+            Rumble(5);
+        }
 
         private void OnHeroUpdate()
         {
-            
             //Every frame, a check is made to see if a certain type of vibration is supposed to be occuring.
+            //Should Wall slide vibration be different from super dashing vibration?
             if (HeroController.instance.cState.superDashing || HeroController.instance.cState.wallSliding)
             {
                 if (!WasContinuousRumbling)
                 {
                     ResetTimedRumble();
-                    GamePad.SetVibration(PlayerIndex.One, 2f, .3f);
+                    GamePad.SetVibration(PlayerIndex.One, .5f, .8f);
                     WasContinuousRumbling = true;
                 }
             } else if (this.IsTimedRumbling)
@@ -140,10 +135,7 @@ namespace ControllerVibration
         //See's what Slash has collided with, and what type of vibration should occour
         private void OnSlashHit(Collider2D otherCollider, GameObject gameObject)
         {
-
             var ShortOtherCollider = otherCollider.ToString().Substring(0, 5);
-
-
             if ((IsInArray(NoVibrateColliders, ShortOtherCollider)) || otherCollider.ToString().Contains("Dialo") ) //If otherColider is in list of no vibrations, then do nothing
             {
                 //Log("No Vibrate Collider: " + otherCollider);
@@ -153,9 +145,7 @@ namespace ControllerVibration
                 if (!IsInArray(LightVibrateColliders, ShortOtherCollider) && !IsInArray(RegularVibrateColliders, ShortOtherCollider)) 
                 {
                     Log("Unseen collider: " + otherCollider);
-                    Vibrate(7);
-                    
-                    
+                    Rumble(7);
                 }else{
                     
                     switch (IsInArray(RegularVibrateColliders, ShortOtherCollider))
@@ -163,48 +153,41 @@ namespace ControllerVibration
                     {    
                         case true: 
                             //Log("Regular Collider: " + otherCollider);
-                            Vibrate(7);
+                            Rumble(7);
                             return;
                         case false:
                             //Log("Light Collider: " + otherCollider);
-                            Vibrate(8);
+                            Rumble(8);
                             return;
                     }
                 }
             }
         }
         
+
         private void DoHardLanding(On.HeroController.orig_DoHardLanding orig, HeroController self)
         {
             orig(self);
-            Vibrate(2);
+            Rumble(2);
         }
         //Since dame can be > 1, should the strength/style of vibration change?
         public int TakeDamage(int damage)
         {
-            Vibrate(1);
+            Rumble(1);
              return damage;
-        }
-        private void DoDamage(On.DamageEnemies.orig_DoDamage orig, DamageEnemies self, GameObject target)
-        {
-            orig(self, target);
-            Vibrate(3);
         }
 
         private int BeforeAddHealthHook(int health)
         {
-            Vibrate(4);
+            Rumble(10);
             return health;
         }
 
-        
-        
-        
-        
-        
+
+
         //A variety of switch statements that correspond to a certain vibration effect. 
         //Left is low frequency rumble, right is high frequency
-        private void Vibrate(int type)
+        private void Rumble(int type)
         {
             this.IsTimedRumbling = true;
             switch (type)
@@ -217,21 +200,13 @@ namespace ControllerVibration
                     VibrationTime = .35f;
                     GamePad.SetVibration(PlayerIndex.One, 1f, 1f);
                     return;
-                case 3: //Hitting an Enemy
-                    VibrationTime = 1f;
-                    GamePad.SetVibration(PlayerIndex.One, 1f, 1f);
-                    return;
                 case 4: //Finish Healing
                     VibrationTime = .2f;
                     GamePad.SetVibration(PlayerIndex.One, .1f, .5f);
                     return;
-                case 5: //Soul Blast
-                    VibrationTime = 1;
-                    GamePad.SetVibration(PlayerIndex.One, 1f, 1f);
-                    return;
-                case 6: //Wall Slide
-                    VibrationTime = 1;
-                    GamePad.SetVibration(PlayerIndex.One, 1f, 1f);
+                case 5: //Dash
+                    VibrationTime = .25f;
+                    GamePad.SetVibration(PlayerIndex.One, .15f, .362f);
                     return;
                 case 7: //Larger rumble (in comparison to case 7), object like a wall, stone monument. Default rumble for 'unknown' colliders
                     VibrationTime = .15f;
@@ -245,18 +220,18 @@ namespace ControllerVibration
                     VibrationTime = .35f;
                     GamePad.SetVibration(PlayerIndex.One, .75f, .5f);
                     return;
-                case 10: //Bounce Rumble
-                    VibrationTime = 1;
-                    GamePad.SetVibration(PlayerIndex.One, 1f, 1f);
+                case 10:
+                    VibrationTime = .33f;
+                    GamePad.SetVibration(0, .6f, .4f);
                     return;
                 default:
                     return;
             }
         }
-
+        //Spell cast hook, returning true means the spell actually executes, false means it doesn't
         private bool OnSpellHook(ModCommon.ModCommon.Spell s)
         {
-            Vibrate(9);
+            Rumble(9);
             return true;
         }
 
@@ -267,10 +242,7 @@ namespace ControllerVibration
             GamePad.SetVibration(PlayerIndex.One, 0f, 0f);
 
         }
-
         //Used for comparing in collider lists.
-
-
         private bool IsInArray(string[] ColliderList, string otherCollider)
         {
             foreach (var str in ColliderList)
@@ -283,7 +255,6 @@ namespace ControllerVibration
 
             return false;
         }
-
         public override string GetVersion()
         {
             return "BETA 0.2";
