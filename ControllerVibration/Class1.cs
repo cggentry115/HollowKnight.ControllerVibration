@@ -60,7 +60,7 @@ namespace ControllerVibration
             On.HeroController.DoHardLanding += DoHardLanding;
             ModHooks.Instance.TakeHealthHook += TakeDamage;
             ModHooks.Instance.BeforeAddHealthHook += BeforeAddHealthHook;
-            On.HeroController.HeroDash += HeroController_HeroDash;
+            On.HeroController.HeroDash += HeroDash;
             On.EnemyDreamnailReaction.RecieveDreamImpact += RecieveDreamImpact;
             //These lines of code shorten all of the elements of the collider lists to just 5 characters long. While this
             //is not a very good way of doing things, without actually being able to tell if a given collider should vibrate,
@@ -96,7 +96,7 @@ namespace ControllerVibration
             Rumble(7);
         }
 
-        private void HeroController_HeroDash(On.HeroController.orig_HeroDash orig, HeroController self)
+        private void HeroDash(On.HeroController.orig_HeroDash orig, HeroController self)
         {
             orig(self);
             Rumble(5);
