@@ -115,8 +115,15 @@ namespace ControllerVibration
                 if (!WasContinuousRumbling)
                 {
                     ResetTimedVibration();
-                    GamePad.SetVibration(PlayerIndex.One, .5f, .8f);
                     WasContinuousRumbling = true;
+                    if (HeroController.instance.cState.superDashing)
+                    {
+                        GamePad.SetVibration(PlayerIndex.One, .5f, .8f);   
+                    }else                   
+                    {
+                        GamePad.SetVibration(PlayerIndex.One, .25f, .362f);
+                    }
+
                 }
             } else if (this.IsTimedRumbling)
             {
@@ -210,8 +217,8 @@ namespace ControllerVibration
             switch (type)
             {
                 case 1: //Damage Taken
-                    VibrationTime = 1;
-                    GamePad.SetVibration(PlayerIndex.One, 1f, 1f);
+                    VibrationTime = .25f;
+                    GamePad.SetVibration(PlayerIndex.One, 1.5f, .8f);
                     return;
                 case 2: //Hard Landing
                     VibrationTime = .35f;
@@ -274,7 +281,7 @@ namespace ControllerVibration
         }
         public override string GetVersion()
         {
-            return "BETA 0.3.1";
+            return "BETA 0.4.0";
         }
 
     }
