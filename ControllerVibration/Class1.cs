@@ -13,6 +13,7 @@ namespace ControllerVibration
         private float VibrationTime = 0f;
         private bool IsTimedRumbling = true;
         private bool WasContinuousRumbling = false;
+        private float NailArtTimer = 0f;
  
         //List of collider.toString()'s. One contains a list of colliders that should not trigger vibration, while the other
         //can be used to trigger a specific type of vibration, if desired.
@@ -21,7 +22,9 @@ namespace ControllerVibration
             "white_grass", "Shield ", "white", "Break", "Roof ", 
             "Dream Dialogue", "town_grass", "left cliff collider", "Geo Small", "plat_float_", "GameObject", 
             "Blue Glob", "Tute Door", "Tute Pole",  "Chunk", "Mines Short Shelf", "terrain collider", "Stag Lift", "Lift",
-            "Opened", "elev_plat", "joni_plinth", "Head Box", "Acid Box", "tollbooth_bottom"
+            "Opened", "elev_plat", "joni_plinth", "Head Box", "Acid Box", "tollbooth_bottom", "Floor Saver", "Cast Box",
+            "ash_grass", "Terrain Saver", "Terrain", "gg_plat_float_wider", "Charge Tink", "Shockwave Spurt", "NailSlash Effects",
+            "grate_collider", "wall colliders", "black_grass", ""
         };
 
 
@@ -39,7 +42,9 @@ namespace ControllerVibration
             "Buzzer", "brk_barrel", "Fly", "Gate Switch", "Tinger", "Soul Totem", "Bell (", "Hatcher", "Spitter",
             "brk_cart", "Health Scuttler", "Health Cocoon", "Ghost Warrior Slug", "Shot Slug Spear", "Quake Floor",
             "health plant", "Fungus Flyer", "Fungoon Baby", "Fungus Mushroom", "Bounce Shroom", "Phys Box", "Fung Crawler", 
-            "Mantis", ""
+            "Mantis", "Nightmare Grimm Boss", "Grimm Boss", "Hornet Boss", "Jellyfish", "Grey Prince", "Hive Knight",
+            "Hornet Boss", "Real Bat", "Mega Jellyfish", "Parasite", "Lost Kin", "Stun Hitbox", "Black Knight", "FK Terrain Block",
+            "White Defender", "White Defender"
 
         };
 
@@ -64,29 +69,28 @@ namespace ControllerVibration
             On.EnemyDreamnailReaction.RecieveDreamImpact += RecieveDreamImpact;
             On.HeroController.Pause += Pause;
             On.HeroController.UnPause += UnPause;
+         
             //These lines of code shorten all of the elements of the collider lists to just 5 characters long. While this
             //is not a very good way of doing things, without actually being able to tell if a given collider should vibrate,
             //since there seems to be no base function for that, I have to manually identify each collider, classifying it as either no, light, or regular vibrate
             for (int i = 0; i < NoVibrateColliders.Length; i++)
             {
-                if (NoVibrateColliders[i].Length > 5)
+                if (NoVibrateColliders[i].Length > 6)
                 {
-                    NoVibrateColliders[i] = NoVibrateColliders[i].Substring(0, 5);
-                    Log(i + NoVibrateColliders[i]);
+                    NoVibrateColliders[i] = NoVibrateColliders[i].Substring(0, 6);
                 }
             }
             for(int i = 0; i < LightVibrateColliders.Length ; i++){
-                if (LightVibrateColliders[i].Length > 5)
+                if (LightVibrateColliders[i].Length > 6)
                 {
-                    LightVibrateColliders[i] = LightVibrateColliders[i].Substring(0, 5);
-                    Log(i + LightVibrateColliders[i]);
+                    LightVibrateColliders[i] = LightVibrateColliders[i].Substring(0, 6);
                 }
             }
             for(int i = 0; i < RegularVibrateColliders.Length; i++){
-                if (RegularVibrateColliders[i].Length > 5)
+                if (RegularVibrateColliders[i].Length > 6)
                 {
-                    RegularVibrateColliders[i] = RegularVibrateColliders[i].Substring(0, 5);
-                    Log(i + RegularVibrateColliders[i]);
+                    RegularVibrateColliders[i] = RegularVibrateColliders[i].Substring(0, 6);
+
                 }
 
             }
@@ -110,6 +114,18 @@ namespace ControllerVibration
         {
             //Every frame, a check is made to see if a certain type of vibration is supposed to be occuring.
             //Should Wall slide vibration be different from super dashing vibration?
+
+            if (HeroController.instance.cState.nailCharging)
+            {
+                NailArtTimer += Time.deltaTime;
+                if(NailArtTimer >= .17f)
+                {
+                    GamePad.SetVibration(0, .25f, .362f);
+                }
+            } else if(NailArtTimer != 0f)
+            {
+                GamePad.SetVibration(0, 0f, 0f);
+            }
             if (HeroController.instance.cState.superDashing || HeroController.instance.cState.wallSliding)
             {
                 if (!WasContinuousRumbling)
@@ -281,7 +297,7 @@ namespace ControllerVibration
         }
         public override string GetVersion()
         {
-            return "BETA 0.4.0";
+            return "BETA 0.5.1";
         }
 
     }

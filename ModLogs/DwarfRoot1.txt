@@ -1,0 +1,507 @@
+﻿[INFO]:[ModManager] - Initializing
+[INFO]:[ModManager] - Initialized
+[INFO]:[API] - Loading ModdingApi Global Settings.
+[INFO]:[API] - Main menu loading
+[INFO]:[API] - Preloaded reflection in 131ms
+[INFO]:[API] - Trying to load mods
+[INFO]:[API] - Attempting to determine type of mod assemblies (library/mod/addon)
+[INFO]:[API] - ControllerVibration - MOD
+[INFO]:[API] - EnemyHPBar - MOD
+[INFO]:[API] - FragileStrengthForNailArts - MOD
+[INFO]:[API] - ModCommon - MOD
+[INFO]:[API] - MoreSaves - MOD
+[INFO]:[API] - SereCore - LIBRARY
+[INFO]:[API] - Vasi - LIBRARY
+[INFO]:[SereCore] - Initializing
+[INFO]:[ControllerVibration] - Initializing
+[INFO]:[EnemyHPBar] - Initializing
+[INFO]:[EnemyHPBar] - Loading Global Settings
+[INFO]:[NailArtBuff] - Initializing
+[INFO]:[ModCommon] - Initializing
+[INFO]:[ModCommon] - Instantiating Mod
+[INFO]:[ModCommon] - Loading Global Settings
+[INFO]:[MoreSaves] - Initializing
+[INFO]:[API] - Preloading
+[INFO]:[API] - Checking preloads for mod "ModCommon"
+[INFO]:[API] - Checking preloads for mod "SereCore"
+[INFO]:[API] - Checking preloads for mod "Controller Vibration"
+[INFO]:[API] - Checking preloads for mod "EnemyHPBar"
+[INFO]:[API] - Checking preloads for mod "NailArtBuff"
+[INFO]:[API] - Checking preloads for mod "MoreSaves"
+[INFO]:[API] - Loading ModdingApi Global Settings.
+[INFO]:[ModCommon] - Mod Common initializing!
+[INFO]:[ModCommon] - Global settings version match!
+[INFO]:[ModCommon] - Saving Global Settings
+[INFO]:[ModCommon] - Mod Common is done initializing!
+[INFO]:[ControllerVibration] - Initializing ControllerVibration
+[INFO]:[ControllerVibration] - 0white
+[INFO]:[ControllerVibration] - 1Shiel
+[INFO]:[ControllerVibration] - 5Dream
+[INFO]:[ControllerVibration] - 6town_
+[INFO]:[ControllerVibration] - 7left 
+[INFO]:[ControllerVibration] - 8Geo S
+[INFO]:[ControllerVibration] - 9plat_
+[INFO]:[ControllerVibration] - 10GameO
+[INFO]:[ControllerVibration] - 11Blue 
+[INFO]:[ControllerVibration] - 12Tute 
+[INFO]:[ControllerVibration] - 13Tute 
+[INFO]:[ControllerVibration] - 15Mines
+[INFO]:[ControllerVibration] - 16terra
+[INFO]:[ControllerVibration] - 17Stag 
+[INFO]:[ControllerVibration] - 19Opene
+[INFO]:[ControllerVibration] - 20elev_
+[INFO]:[ControllerVibration] - 21joni_
+[INFO]:[ControllerVibration] - 22Head 
+[INFO]:[ControllerVibration] - 23Acid 
+[INFO]:[ControllerVibration] - 24tollb
+[INFO]:[ControllerVibration] - 0Cross
+[INFO]:[ControllerVibration] - 1Cross
+[INFO]:[ControllerVibration] - 2Break
+[INFO]:[ControllerVibration] - 3brk_C
+[INFO]:[ControllerVibration] - 4Direc
+[INFO]:[ControllerVibration] - 5Stag_
+[INFO]:[ControllerVibration] - 0Zombi
+[INFO]:[ControllerVibration] - 1Cross
+[INFO]:[ControllerVibration] - 2Cross
+[INFO]:[ControllerVibration] - 3Climb
+[INFO]:[ControllerVibration] - 4Crawl
+[INFO]:[ControllerVibration] - 5Zombi
+[INFO]:[ControllerVibration] - 6Geo R
+[INFO]:[ControllerVibration] - 7brk_b
+[INFO]:[ControllerVibration] - 8Buzze
+[INFO]:[ControllerVibration] - 9brk_b
+[INFO]:[ControllerVibration] - 11Gate 
+[INFO]:[ControllerVibration] - 12Tinge
+[INFO]:[ControllerVibration] - 13Soul 
+[INFO]:[ControllerVibration] - 14Bell 
+[INFO]:[ControllerVibration] - 15Hatch
+[INFO]:[ControllerVibration] - 16Spitt
+[INFO]:[ControllerVibration] - 17brk_c
+[INFO]:[ControllerVibration] - 18Healt
+[INFO]:[ControllerVibration] - 19Healt
+[INFO]:[ControllerVibration] - 20Ghost
+[INFO]:[ControllerVibration] - 21Shot 
+[INFO]:[ControllerVibration] - 22Quake
+[INFO]:[ControllerVibration] - 23healt
+[INFO]:[ControllerVibration] - 24Fungu
+[INFO]:[ControllerVibration] - 25Fungo
+[INFO]:[ControllerVibration] - 26Fungu
+[INFO]:[ControllerVibration] - 27Bounc
+[INFO]:[ControllerVibration] - 28Phys 
+[INFO]:[ControllerVibration] - 29Fung 
+[INFO]:[ControllerVibration] - 30Manti
+[INFO]:[EnemyHPBar] - Initializing EnemyHPBars
+[INFO]:[EnemyHPBar] - Initialized EnemyHPBars
+[INFO]:[MoreSaves] - Initializing MoreSaves
+[INFO]:[MoreSaves] - Initialized MoreSaves
+[INFO]:[API] - Saving Global Settings
+[INFO]:[ModCommon] - Loading mod settings from save.
+[INFO]:Creating hpbar for Real Bat
+[INFO]:[EnemyHPBar] - Added hp bar to Real Bat
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[EnemyHPBar] - Added hp bar to boss Grimm Boss
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Bow (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Real Bat (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Real Bat (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Real Bat (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Real Bat (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ModCommon] - Adding settings to save file
+[INFO]:Creating hpbar for Real Bat
+[INFO]:[EnemyHPBar] - Added hp bar to Real Bat
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[EnemyHPBar] - Added hp bar to boss Grimm Boss
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Bow (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Cast Box (UnityEngine.PolygonCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Floor Saver (UnityEngine.BoxCollider2D)
+[INFO]:[ModCommon] - Adding settings to save file
+[INFO]:[EnemyHPBar] - Added hp bar to boss Nightmare Grimm Boss
+[INFO]:Creating hpbar for Real Bat
+[INFO]:[EnemyHPBar] - Added hp bar to Real Bat
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ModCommon] - Adding settings to save file
+[INFO]:[EnemyHPBar] - Added hp bar to boss Nightmare Grimm Boss
+[INFO]:Creating hpbar for Real Bat
+[INFO]:[EnemyHPBar] - Added hp bar to Real Bat
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ControllerVibration] - Unseen collider: Nightmare Grimm Boss (UnityEngine.BoxCollider2D)
+[INFO]:[ModCommon] - Adding settings to save file
+[INFO]:[ModCommon] - Adding settings to save file
+[INFO]:[API] - Saving Global Settings
+[INFO]:[EnemyHPBar] - Saving Global Settings
