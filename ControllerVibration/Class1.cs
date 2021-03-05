@@ -24,7 +24,8 @@ namespace ControllerVibration
             "Blue Glob", "Tute Door", "Tute Pole",  "Chunk", "Mines Short Shelf", "terrain collider", "Stag Lift", "Lift",
             "Opened", "elev_plat", "joni_plinth", "Head Box", "Acid Box", "tollbooth_bottom", "Floor Saver", "Cast Box",
             "ash_grass", "Terrain Saver", "Terrain", "gg_plat_float_wider", "Charge Tink", "Shockwave Spurt", "NailSlash Effects",
-            "grate_collider", "wall colliders", "black_grass", ""
+            "grate_collider", "wall colliders", "black_grass", "simple_grass", "green_grass_1", "fung_vine",
+            "floor collider", ""
         };
 
 
@@ -44,7 +45,10 @@ namespace ControllerVibration
             "health plant", "Fungus Flyer", "Fungoon Baby", "Fungus Mushroom", "Bounce Shroom", "Phys Box", "Fung Crawler", 
             "Mantis", "Nightmare Grimm Boss", "Grimm Boss", "Hornet Boss", "Jellyfish", "Grey Prince", "Hive Knight",
             "Hornet Boss", "Real Bat", "Mega Jellyfish", "Parasite", "Lost Kin", "Stun Hitbox", "Black Knight", "FK Terrain Block",
-            "White Defender", "White Defender"
+            "White Defender", "White Defender", "Mossman_Shaker", "Plant Trap", "Moss Walker", "Attack Detect", "Moss Knight",
+            "Giant Buzzer", "Banker Spa NPC", "One Way Wall", "Outskirts pole king", "Super Spitter", "Training Dummy",
+            "Hopper", "Blow Fly", "Bee Hatchling", "Blow Fly", "Abyss Crawler", "infected_large", "tink collider", "Plant Turret",
+            ""
 
         };
 
@@ -118,13 +122,14 @@ namespace ControllerVibration
             if (HeroController.instance.cState.nailCharging)
             {
                 NailArtTimer += Time.deltaTime;
-                if(NailArtTimer >= .17f)
+                if(NailArtTimer >= .25f)
                 {
                     GamePad.SetVibration(0, .25f, .362f);
                 }
             } else if(NailArtTimer != 0f)
             {
                 GamePad.SetVibration(0, 0f, 0f);
+                NailArtTimer = 0f;
             }
             if (HeroController.instance.cState.superDashing || HeroController.instance.cState.wallSliding)
             {
@@ -297,7 +302,7 @@ namespace ControllerVibration
         }
         public override string GetVersion()
         {
-            return "BETA 0.5.1";
+            return "1.0.0"; 
         }
 
     }
