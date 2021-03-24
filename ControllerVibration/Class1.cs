@@ -49,7 +49,6 @@ namespace ControllerVibration
             "Giant Buzzer", "Banker Spa NPC", "One Way Wall", "Outskirts pole king", "Super Spitter", "Training Dummy",
             "Hopper", "Blow Fly", "Bee Hatchling", "Blow Fly", "Abyss Crawler", "infected_large", "tink collider", "Plant Turret",
             ""
-
         };
 
 
